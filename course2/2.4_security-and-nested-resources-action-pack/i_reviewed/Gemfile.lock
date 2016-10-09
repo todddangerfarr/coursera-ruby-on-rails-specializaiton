@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (4.2.5.1)
       actionpack (= 4.2.5.1)
@@ -37,6 +37,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    bcrypt (3.1.11-x86-mingw32)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -75,6 +76,7 @@ GEM
     multi_json (1.12.1)
     nokogiri (1.6.8.1-x86-mingw32)
       mini_portile2 (~> 2.1.0)
+    pg (0.19.0-x86-mingw32)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -97,6 +99,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (4.2.5.1)
       actionpack (= 4.2.5.1)
       activesupport (= 4.2.5.1)
@@ -140,16 +147,20 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    will_paginate (3.0.10)
 
 PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   rails (= 4.2.5.1)
+  rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   sqlite3
@@ -157,6 +168,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+  will_paginate (~> 3.0.6)
 
 BUNDLED WITH
    1.10.4
